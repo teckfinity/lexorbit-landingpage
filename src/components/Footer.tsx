@@ -42,12 +42,12 @@ export function Footer() {
           <div className="col-span-2 md:col-span-2 lg:col-span-1">
             <a href="#" className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-cognac flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-lg sm:text-xl">L</span>
-              </div>
+              <img src="/logo.svg" alt="LexOrbit Logo" className="w-6 h-6 sm:w-8 sm:h-8" />
+            </div>
               <span className="font-heading text-lg sm:text-xl font-bold text-white">
-                LexOrbit
-              </span>
-            </a>
+              LexOrbit
+            </span>
+          </a>
             <p className="font-legal text-xs sm:text-sm italic text-white/60 mb-4 sm:mb-6">
               "Legal Intelligence Made Human"
             </p>

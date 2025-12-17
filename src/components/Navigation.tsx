@@ -44,9 +44,9 @@ export function Navigation({ showBanner = true }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 sm:gap-3 group">
+              <a href="#" className="flex items-center gap-2 sm:gap-3 group">
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-gold flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-shadow">
-              <span className="text-white font-heading font-bold text-lg sm:text-xl">L</span>
+              <img src="/logo.svg" alt="LexOrbit Logo" className="w-6 h-6 sm:w-8 sm:h-8" />
             </div>
             <span className="font-heading text-xl sm:text-2xl font-bold text-white">
               LexOrbit
