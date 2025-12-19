@@ -35,43 +35,50 @@ export function Footer() {
   const { openCookieSettings } = useCookieContext();
   
   return (
-    <footer className="bg-navy py-12 sm:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
-          {/* Logo & Tagline */}
-          <div className="col-span-2 md:col-span-2 lg:col-span-1">
-            <a href="#" className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-cognac flex items-center justify-center">
-              <img src="/logo.svg" alt="LexOrbit Logo" className="w-6 h-6 sm:w-8 sm:h-8" />
-            </div>
-              <span className="font-heading text-lg sm:text-xl font-bold text-white">
-              LexOrbit
-            </span>
+<footer className="bg-navy py-12 sm:py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+      
+      {/* Logo & Tagline */}
+      <div className="col-span-2 md:col-span-2 lg:col-span-1">
+        <a href="#" className="inline-flex items-center mb-4">
+          {/* SVG Logo – no box, no background */}
+          <img
+            src="/logo.svg"
+            alt="LexOrbit Logo"
+            className="
+              w-16 sm:w-20 md:w-24
+              h-auto
+              object-contain
+            "
+          />
+        </a>
+
+        <p className="font-legal text-xs sm:text-sm italic text-white/60 mb-4 sm:mb-6">
+          "Legal Intelligence Made Human"
+        </p>
+
+        <div className="flex gap-4">
+          <a
+            href="#"
+            className="text-white/60 hover:text-primary transition-colors"
+          >
+            <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
           </a>
-            <p className="font-legal text-xs sm:text-sm italic text-white/60 mb-4 sm:mb-6">
-              "Legal Intelligence Made Human"
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="text-white/60 hover:text-primary transition-colors"
-              >
-                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-white/60 hover:text-primary transition-colors"
-              >
-                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-white/60 hover:text-primary transition-colors"
-              >
-                <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </div>
-          </div>
+          <a
+            href="#"
+            className="text-white/60 hover:text-primary transition-colors"
+          >
+            <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
+          </a>
+          <a
+            href="#"
+            className="text-white/60 hover:text-primary transition-colors"
+          >
+            <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
+          </a>
+        </div>
+      </div>
 
           {/* Product */}
           <div>

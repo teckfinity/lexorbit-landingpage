@@ -41,17 +41,21 @@ export function Navigation({ showBanner = true }: NavigationProps) {
           : "bg-transparent py-3 sm:py-5"
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-              <a href="#" className="flex items-center gap-2 sm:gap-3 group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-gold flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-shadow">
-              <img src="/logo.svg" alt="LexOrbit Logo" className="w-6 h-6 sm:w-8 sm:h-8" />
-            </div>
-            <span className="font-heading text-xl sm:text-2xl font-bold text-white">
-              LexOrbit
-            </span>
-          </a>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+  <div className="flex items-center justify-between">
+    
+    {/* Logo */}
+    <a href="#" className="inline-flex items-center">
+      <img
+        src="/logo.svg"
+        alt="LexOrbit Logo"
+        className="
+          w-16 sm:w-20 md:w-24
+          h-auto
+          object-contain
+        "
+      />
+    </a>
 
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center gap-6 xl:gap-10">
