@@ -48,9 +48,13 @@ export default function JudgeAnalytics() {
               <Button size="lg" className="px-10 py-6 text-lg font-bold shadow-lg hover:-translate-y-1 transition-all" style={{ background: 'linear-gradient(135deg, #D4A574, #E5C69F)', color: '#0F1419', boxShadow: '0 8px 24px rgba(212, 165, 116, 0.4)' }}>
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
-                Watch Demo
-              </Button>
+                <Button 
+  size="lg" 
+  variant="outline" 
+  className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+>
+  Watch Demo
+</Button>
             </div>
           </motion.div>
         </div>
@@ -267,9 +271,13 @@ export default function JudgeAnalytics() {
                   Start Free Trial
                 </Button>
                 <Link to="/#pricing">
-                  <Button size="lg" variant="outline" className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
-                    View Pricing
-                  </Button>
+        <Button 
+  size="lg" 
+  variant="outline" 
+  className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+>
+  View Pricing
+</Button>
                 </Link>
               </div>
 
