@@ -35,10 +35,10 @@ export function Navigation({ showBanner = true }: NavigationProps) {
     <nav
       className={cn(
         "fixed left-0 w-full z-50 transition-all duration-500",
-        showBanner ? "top-[48px] sm:top-[52px]" : "top-0",
+        showBanner ? "top-[85px] sm:top-[52px]" : "top-0",
         isScrolled
           ? "bg-navy/95 backdrop-blur-md shadow-lg py-2 sm:py-3"
-          : "bg-transparent py-3 sm:py-5"
+          : "bg-transparent py-7 sm:py-5"
       )}
     >
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
