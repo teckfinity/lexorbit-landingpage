@@ -9,7 +9,7 @@ const productLinks = [
   { label: "Citation Maps", href: "/features/citation-maps" },
   { label: "Predictive AI", href: "/features/predictive-ai" },
   { label: "Document Automation", href: "/features/document-automation" },
-  { label: "Pricing", href: "/billing" },
+  // { label: "Pricing", href: "/billing" },
 ];
 
 const resourceLinks = [
@@ -28,7 +28,7 @@ const legalLinks = [
   { label: "Privacy Policy", href: "/legal/privacy" },
   { label: "Security", href: "/legal/security" },
   { label: "GDPR Compliance", href: "/legal/gdpr" },
-  { label: "Accessibility", href: "/legal/accessibility" },
+  // { label: "Accessibility", href: "/legal/accessibility" },
 ];
 
 export function Footer() {
@@ -150,7 +150,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 sm:pt-8 text-center">
           <p className="font-body text-xs sm:text-sm text-white/40">
-            © 2024 LexOrbit. All rights reserved. Built with love for the legal community.
+            © 2025 LexOrbit. All rights reserved. Built with love for the legal community.
           </p>
         </div>
       </div>

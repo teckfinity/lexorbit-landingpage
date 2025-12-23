@@ -244,7 +244,7 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-4 border-t border-white/10">
+      {/* <section className="py-20 px-4 border-t border-white/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-heading text-3xl font-bold text-white text-center mb-4">
             Meet the Team
@@ -283,7 +283,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-20 px-4 border-t border-white/10">

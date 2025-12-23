@@ -232,10 +232,10 @@ export default function Security() {
               and offer rewards through our bug bounty program.
             </p>
             <a
-              href="mailto:security@lexorbit.com"
+              href="mailto:security@getlexorbit.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors"
             >
-              security@lexorbit.com
+              security@getlexorbit.com
             </a>
           </div>
         </div>

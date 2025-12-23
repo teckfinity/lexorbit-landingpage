@@ -109,10 +109,10 @@ You can manage cookie preferences in your browser settings. Some features may no
     icon: Mail,
     content: `For privacy-related inquiries:
 
-Email: privacy@lexorbit.com
+Email: privacy@getlexorbit.com
 Address: 123 Legal Tech Plaza, San Francisco, CA 94102
 
-Data Protection Officer: dpo@lexorbit.com
+Data Protection Officer: dpo@getlexorbit.com
 
 We respond to all privacy requests within 30 days.`
   }

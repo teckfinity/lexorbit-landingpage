@@ -57,7 +57,7 @@ You can request earlier deletion at any time.`
     icon: Users,
     content: `Our DPO oversees GDPR compliance:
 
-**Contact**: dpo@lexorbit.com
+**Contact**: dpo@getlexorbit.com
 **Address**: 123 Legal Tech Plaza, San Francisco, CA 94102
 
 The DPO is available to address any questions or concerns about how we handle your personal data.`
@@ -171,11 +171,11 @@ export default function GDPR() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:privacy@lexorbit.com"
+                href="mailto:privacy@getlexorbit.com"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                privacy@lexorbit.com
+                privacy@getlexorbit.com
               </a>
               <Link
                 to="/contact"

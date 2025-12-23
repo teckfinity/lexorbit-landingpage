@@ -78,7 +78,7 @@ Annual Plan:
 Refund Policy:
 • 30-day money-back guarantee on all new subscriptions
 • Not satisfied? Full refund, no questions asked
-• Contact support@lexorbit.com for any billing issues`,
+• Contact support@getlexorbit.com for any billing issues`,
   },
   {
     question: '"What if I need to cancel?"',

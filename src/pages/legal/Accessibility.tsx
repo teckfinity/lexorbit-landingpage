@@ -182,11 +182,11 @@ export default function Accessibility() {
               Help us improve accessibility for everyone.
             </p>
             <a
-              href="mailto:accessibility@lexorbit.com"
+              href="mailto:accessibility@getlexorbit.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors"
             >
               <Mail className="w-4 h-4" />
-              accessibility@lexorbit.com
+              accessibility@getlexorbit.com
             </a>
           </div>
         </div>
