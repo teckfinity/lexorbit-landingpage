@@ -303,7 +303,6 @@ export function PricingSection({ onOpenBetaModal, onOpenWaitlistModal }: Pricing
             </div>
           </div>
         </motion.div>
-
         {/* Monthly/Annual Toggle */}
         <TooltipProvider delayDuration={0}>
           <motion.div
@@ -313,6 +312,7 @@ export function PricingSection({ onOpenBetaModal, onOpenWaitlistModal }: Pricing
             transition={{ duration: 0.5 }}
             className="flex justify-center items-center gap-4 mb-8"
           >
+            {/* Monthly Label */}
             <span className={`font-body text-sm flex items-center gap-1 ${!isAnnual ? 'text-navy font-semibold' : 'text-slate'}`}>
               Monthly
               <Tooltip>
@@ -323,24 +323,28 @@ export function PricingSection({ onOpenBetaModal, onOpenWaitlistModal }: Pricing
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs bg-navy text-white p-3 z-[100]">
                   <p className="text-sm">
-                    <strong>Monthly billing:</strong> Pay month-to-month with no long-term commitment. 
+                    <strong>Monthly billing:</strong> Pay month-to-month with no long-term commitment.
                     Cancel anytime with no cancellation fees.
                   </p>
                 </TooltipContent>
               </Tooltip>
             </span>
+
+            {/* Toggle Button */}
             <button
               onClick={() => setIsAnnual(!isAnnual)}
-              className={`relative w-16 h-8 rounded-full transition-colors duration-300 ${
-                isAnnual ? 'bg-gradient-gold' : 'bg-charcoal/20'
+              className={`relative w-16 h-8 flex items-center rounded-full p-1 transition-colors duration-300 ${
+                isAnnual ? 'bg-gradient-gold justify-end' : 'bg-charcoal/20 justify-start'
               }`}
             >
               <motion.div
-                className="absolute top-1 w-6 h-6 bg-white rounded-full shadow-md"
-                animate={{ left: isAnnual ? '2.25rem' : '0.25rem' }}
+                className="w-6 h-6 bg-white rounded-full shadow-md"
+                layout
                 transition={{ type: 'spring', stiffness: 500, damping: 30 }}
               />
             </button>
+
+            {/* Annual Label */}
             <span className={`font-body text-sm flex items-center gap-1 ${isAnnual ? 'text-navy font-semibold' : 'text-slate'}`}>
               Annual
               <Tooltip>
@@ -351,12 +355,14 @@ export function PricingSection({ onOpenBetaModal, onOpenWaitlistModal }: Pricing
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs bg-navy text-white p-3 z-[100]">
                   <p className="text-sm">
-                    <strong>Annual billing:</strong> Pay upfront for 12 months and save up to 25%. 
+                    <strong>Annual billing:</strong> Pay upfront for 12 months and save up to 25%.
                     Your card is charged once per year on your subscription anniversary date.
                   </p>
                 </TooltipContent>
               </Tooltip>
             </span>
+
+            {/* Discount Badge */}
             <span className={`ml-2 px-3 py-1 bg-sage/20 text-sage text-xs font-semibold rounded-full transition-opacity duration-200 ${isAnnual ? 'opacity-100' : 'opacity-0'}`}>
               Save up to $240/year
             </span>

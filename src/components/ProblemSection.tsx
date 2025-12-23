@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import { Clock, DollarSign, TrendingUp, Zap } from "lucide-react";
 
 const withoutData = {
-  title: "WITHOUT LegalAI Pro",
+  title: "WITHOUT LexOrbit",
   subtitle: "Your Current Reality",
   tasks: [
     { time: "3.5 hrs", label: "Legal Research", width: "100%" },

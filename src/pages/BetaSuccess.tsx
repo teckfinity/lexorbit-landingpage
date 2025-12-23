@@ -163,12 +163,12 @@ export default function BetaSuccess() {
             >
               Questions? Email Greg
             </a>
-            <Link
+            {/* <Link
               to="/"
               className="flex-1 px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white/70 font-semibold rounded-xl transition-all text-center"
             >
               ← Back to Home
-            </Link>
+            </Link> */}
           </motion.div>
         </div>
       </main>

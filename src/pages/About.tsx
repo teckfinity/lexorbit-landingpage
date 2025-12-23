@@ -94,13 +94,13 @@ export default function About() {
       {/* Hero */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Link 
+          {/* <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
-          </Link>
+          </Link> */}
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -244,7 +244,7 @@ export default function About() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-4 border-t border-white/10">
+      {/* <section className="py-20 px-4 border-t border-white/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-heading text-3xl font-bold text-white text-center mb-4">
             Meet the Team
@@ -283,7 +283,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-20 px-4 border-t border-white/10">

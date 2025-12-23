@@ -24,17 +24,18 @@ export default function CitationMaps() {
   const [selectedNode, setSelectedNode] = useState<CaseNode | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const centralNode: CaseNode = { 
-    id: 1, x: 50, y: 50, label: "Brown v. Board of Education", size: 60, type: "landmark",
-    year: "1954", description: "Landmark Supreme Court case that declared racial segregation in public schools unconstitutional.", citations: 25847
-  };
-  const connectedNodes: CaseNode[] = [
-    { id: 2, x: 20, y: 25, label: "Plessy v. Ferguson", size: 40, type: "cited", year: "1896", description: "Established 'separate but equal' doctrine, later overturned by Brown.", citations: 8234 },
-    { id: 3, x: 80, y: 20, label: "Bolling v. Sharpe", size: 35, type: "citing", year: "1954", description: "Extended Brown's desegregation ruling to federal territories.", citations: 3421 },
-    { id: 4, x: 15, y: 75, label: "McLaurin v. Oklahoma", size: 30, type: "cited", year: "1950", description: "Ruled against segregation within graduate education.", citations: 2156 },
-    { id: 5, x: 85, y: 70, label: "Green v. County School Board", size: 35, type: "citing", year: "1968", description: "Required school districts to take affirmative steps to desegregate.", citations: 4532 },
-    { id: 6, x: 50, y: 85, label: "Swann v. Charlotte-Mecklenburg", size: 32, type: "citing", year: "1971", description: "Upheld busing as a means to achieve school desegregation.", citations: 3876 },
-  ];
+const centralNode: CaseNode = {
+  id: 1, x: 50, y: 50, label: "Brown v. Board of Education", size: 60, type: "landmark",
+  year: "1954", description: "Landmark Supreme Court case that declared racial segregation in public schools unconstitutional.", citations: 25847
+};
+
+const connectedNodes: CaseNode[] = [
+  { id: 2, x: 15, y: 30, label: "Plessy v. Ferguson", size: 40, type: "cited", year: "1896", description: "Established 'separate but equal' doctrine, later overturned by Brown.", citations: 8234 },
+  { id: 4, x: 20, y: 70, label: "McLaurin v. Oklahoma", size: 35, type: "cited", year: "1950", description: "Ruled against segregation within graduate education.", citations: 2156 },
+  { id: 3, x: 65, y: 25, label: "Bolling v. Sharpe", size: 35, type: "citing", year: "1954", description: "Extended Brown's desegregation ruling to federal territories.", citations: 3421 },
+  { id: 5, x: 85, y: 45, label: "Green v. County School Board", size: 38, type: "citing", year: "1968", description: "Required school districts to take affirmative steps to desegregate.", citations: 4532 },
+  { id: 6, x: 85, y: 75, label: "Swann v. Charlotte-Mecklenburg", size: 35, type: "citing", year: "1971", description: "Upheld busing as a means to achieve school desegregation.", citations: 3876 },
+];
   const allNodes = [centralNode, ...connectedNodes];
 
   const handleNodeClick = (node: CaseNode) => {
@@ -87,9 +88,13 @@ export default function CitationMaps() {
               <Button size="lg" className="px-10 py-6 text-lg font-bold shadow-lg hover:-translate-y-1 transition-all" style={{ background: 'linear-gradient(135deg, #D4A574, #E5C69F)', color: '#0F1419', boxShadow: '0 8px 24px rgba(212, 165, 116, 0.4)' }}>
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
-                Watch Demo
-              </Button>
+             <Button 
+  size="lg" 
+  variant="outline" 
+  className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+>
+  Watch Demo
+</Button>
             </div>
           </motion.div>
         </div>
@@ -430,9 +435,13 @@ export default function CitationMaps() {
                   Start Free Trial
                 </Button>
                 <Link to="/#pricing">
-                  <Button size="lg" variant="outline" className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
-                    View Pricing
-                  </Button>
+<Button 
+  size="lg" 
+  variant="outline" 
+  className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+>
+  View Pricing
+</Button>
                 </Link>
               </div>
 

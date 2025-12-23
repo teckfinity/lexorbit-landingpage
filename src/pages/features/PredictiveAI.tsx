@@ -42,7 +42,11 @@ export default function PredictiveAI() {
               <Button size="lg" className="px-10 py-6 text-lg font-bold shadow-lg hover:-translate-y-1 transition-all" style={{ background: 'linear-gradient(135deg, #D4A574, #E5C69F)', color: '#0F1419', boxShadow: '0 8px 24px rgba(212, 165, 116, 0.4)' }}>
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="px-10 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+              >
                 Watch Demo
               </Button>
             </div>
@@ -84,44 +88,52 @@ export default function PredictiveAI() {
               Analyze Case →
             </Button>
 
+            {/* Fixed Progress Circles - Fully visible on mobile */}
             <div className="grid md:grid-cols-3 gap-6">
+              {/* Success Probability */}
               <div className="bg-cream rounded-xl p-6 text-center">
-                <div className="relative w-24 h-24 mx-auto mb-4">
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle cx="48" cy="48" r="40" stroke="#E5E7EB" strokeWidth="8" fill="none" />
+                <div className="relative w-20 sm:w-24 h-20 sm:h-24 mx-auto mb-4">
+                  <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="42" stroke="#E5E7EB" strokeWidth="8" fill="none" />
                     <circle 
-                      cx="48" cy="48" r="40" 
+                      cx="50" cy="50" r="42" 
                       stroke="#D4A574" strokeWidth="8" fill="none"
-                      strokeDasharray={`${prediction.success * 2.51} 251`}
+                      strokeDasharray={`${prediction.success * 2.638} 263.8`}
                       strokeLinecap="round"
+                      className="transition-all duration-1000"
                     />
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-2xl font-black text-gold">{prediction.success}%</span>
+                    <span className="text-xl sm:text-2xl font-black text-gold">{prediction.success}%</span>
                   </div>
                 </div>
                 <div className="text-charcoal/70 font-semibold">Success Probability</div>
               </div>
+
+              {/* Settlement Likelihood */}
               <div className="bg-cream rounded-xl p-6 text-center">
-                <div className="relative w-24 h-24 mx-auto mb-4">
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle cx="48" cy="48" r="40" stroke="#E5E7EB" strokeWidth="8" fill="none" />
+                <div className="relative w-20 sm:w-24 h-20 sm:h-24 mx-auto mb-4">
+                  <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="42" stroke="#E5E7EB" strokeWidth="8" fill="none" />
                     <circle 
-                      cx="48" cy="48" r="40" 
+                      cx="50" cy="50" r="42" 
                       stroke="#7A9B76" strokeWidth="8" fill="none"
-                      strokeDasharray={`${prediction.settlement * 2.51} 251`}
+                      strokeDasharray={`${prediction.settlement * 2.638} 263.8`}
                       strokeLinecap="round"
+                      className="transition-all duration-1000"
                     />
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-2xl font-black text-sage">{prediction.settlement}%</span>
+                    <span className="text-xl sm:text-2xl font-black text-sage">{prediction.settlement}%</span>
                   </div>
                 </div>
                 <div className="text-charcoal/70 font-semibold">Settlement Likelihood</div>
               </div>
+
+              {/* Estimated Duration */}
               <div className="bg-cream rounded-xl p-6 text-center">
-                <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl font-black text-navy">{prediction.duration}</span>
+                <div className="w-20 sm:w-24 h-20 sm:h-24 mx-auto mb-4 flex items-center justify-center bg-white/50 rounded-full">
+                  <span className="text-xl sm:text-2xl font-black text-navy">{prediction.duration}</span>
                 </div>
                 <div className="text-charcoal/70 font-semibold">Est. Duration</div>
               </div>
@@ -289,7 +301,11 @@ export default function PredictiveAI() {
                   Start Free Trial
                 </Button>
                 <Link to="/#pricing">
-                  <Button size="lg" variant="outline" className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:border-gold hover:text-gold bg-transparent">
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="px-12 py-6 text-lg border-2 border-white/30 text-white hover:bg-gold hover:text-black hover:border-gold bg-transparent transition-all duration-300"
+                  >
                     View Pricing
                   </Button>
                 </Link>
