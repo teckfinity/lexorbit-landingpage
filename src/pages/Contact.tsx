@@ -53,13 +53,13 @@ export default function Contact() {
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 165, 116, 0.03) 2px, rgba(212, 165, 116, 0.03) 4px)' }} />
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <Link 
+          {/* <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
-          </Link>
+          </Link> */}
           
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center border-2 border-gold/30" style={{ background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(232, 204, 180, 0.1))', boxShadow: '0 12px 40px rgba(212, 165, 116, 0.2)' }}>

@@ -143,12 +143,12 @@ export default function WaitlistSuccess() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            <Link
+            {/* <Link
               to="/"
               className="block w-full px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white/70 font-semibold rounded-xl transition-all text-center"
             >
               ← Back to Home
-            </Link>
+            </Link> */}
           </motion.div>
 
           {/* Footer Note */}

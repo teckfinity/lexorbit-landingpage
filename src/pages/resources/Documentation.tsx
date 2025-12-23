@@ -69,10 +69,10 @@ export default function Documentation() {
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 165, 116, 0.03) 2px, rgba(212, 165, 116, 0.03) 4px)' }} />
         
         <div className="max-w-4xl mx-auto relative z-10">
-          <Link to="/" className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6">
+          {/* <Link to="/" className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6">
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
-          </Link>
+          </Link> */}
           
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="flex items-center gap-3 mb-4">
