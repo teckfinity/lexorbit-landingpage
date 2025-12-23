@@ -291,7 +291,7 @@ export function HeroSection({ onOpenBetaModal, onOpenWaitlistModal }: HeroSectio
       <div className="hidden sm:block absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-[#D4A574]/5 rounded-full blur-[120px]" />
       <div className="hidden sm:block absolute bottom-1/4 left-1/4 w-48 sm:w-64 h-48 sm:h-64 bg-[#D4A574]/3 rounded-full blur-[100px]" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-28 sm:pt-32 lg:pt-40 pb-12 sm:pb-16 lg:pb-20 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-36 sm:pt-40 lg:pt-48 pb-12 sm:pb-16 lg:pb-20 relative z-10 w-full">
         <div className="grid lg:grid-cols-[380px_1fr] xl:grid-cols-[420px_1fr] gap-8 lg:gap-12 items-start">
           
           {/* LEFT SIDE - Content (40%) */}
@@ -457,36 +457,41 @@ export function HeroSection({ onOpenBetaModal, onOpenWaitlistModal }: HeroSectio
                 </div>
               </div>
 
-              {/* Component 2: Loading State - Absolute positioned overlay */}
-              <AnimatePresence>
-                {phase === "loading" && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute left-0 right-0 top-[72px] lg:top-[80px] px-5 lg:px-6 py-3 bg-[#FFFBF5]/95 z-10"
-                  >
-                    <div className="flex items-center gap-3 mb-2">
-                      <Loader2 className="w-4 h-4 text-[#D4A574] animate-spin" />
-                      <span className="text-sm text-[#1A2332]/70">
-                        Searching 2.4M cases
-                        <span className="animate-pulse">...</span>
-                      </span>
-                    </div>
-                    <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full rounded-full"
-                        style={{ background: 'linear-gradient(90deg, #D4A574, #E5C69F)' }}
-                        initial={{ width: "0%" }}
-                        animate={{ width: `${loadingProgress}%` }}
-                        transition={{ duration: 0.1 }}
-                      />
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
+{/* Component 2: Loading State - Ab bilkul neeche aur centered, no overlap at all */}
+<AnimatePresence>
+  {phase === "loading" && (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9, y: 50 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="fixed inset-x-4 sm:inset-x-8 md:inset-x-16 top-40 sm:top-48 md:top-56 lg:top-64 mx-auto max-w-4xl p-8 bg-white rounded-3xl shadow-2xl z-50 border-4 border-[#D4A574]/50 backdrop-blur-lg"
+    >
+      <div className="flex flex-col items-center gap-8">
+        <div className="flex items-center gap-6">
+          <Loader2 className="w-10 h-10 text-[#D4A574] animate-spin" />
+          <span className="text-2xl sm:text-3xl font-bold text-[#1A2332]">
+            Searching 2.4M cases
+            <span className="animate-pulse">...</span>
+          </span>
+        </div>
+        
+        <div className="w-full h-6 bg-gray-300/80 rounded-full overflow-hidden shadow-inner">
+          <motion.div
+            className="h-full rounded-full"
+            style={{ 
+              background: 'linear-gradient(90deg, #D4A574, #E5C69F)',
+              boxShadow: '0 6px 20px rgba(212, 165, 116, 0.6)'
+            }}
+            initial={{ width: "0%" }}
+            animate={{ width: `${loadingProgress}%` }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          />
+        </div>
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
               {/* Component 3: Results Stream In */}
               <div className="p-5 lg:p-6 space-y-3 flex-1 overflow-hidden">
                 {/* Skeleton Loaders - Show when idle or typing */}

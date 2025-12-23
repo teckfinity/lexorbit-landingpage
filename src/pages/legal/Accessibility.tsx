@@ -61,13 +61,13 @@ export default function Accessibility() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link 
+          {/* <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
-          </Link>
+          </Link> */}
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -182,11 +182,11 @@ export default function Accessibility() {
               Help us improve accessibility for everyone.
             </p>
             <a
-              href="mailto:accessibility@lexorbit.com"
+              href="mailto:accessibility@getlexorbit.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors"
             >
               <Mail className="w-4 h-4" />
-              accessibility@lexorbit.com
+              accessibility@getlexorbit.com
             </a>
           </div>
         </div>

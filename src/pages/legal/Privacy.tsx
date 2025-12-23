@@ -109,10 +109,10 @@ You can manage cookie preferences in your browser settings. Some features may no
     icon: Mail,
     content: `For privacy-related inquiries:
 
-Email: privacy@lexorbit.com
+Email: privacy@getlexorbit.com
 Address: 123 Legal Tech Plaza, San Francisco, CA 94102
 
-Data Protection Officer: dpo@lexorbit.com
+Data Protection Officer: dpo@getlexorbit.com
 
 We respond to all privacy requests within 30 days.`
   }
@@ -126,13 +126,13 @@ export default function Privacy() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link 
+          {/* <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
-          </Link>
+          </Link> */}
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}

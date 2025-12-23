@@ -62,10 +62,10 @@ export default function VideoTutorials() {
       {/* Hero - Featured Video */}
       <section className="pt-28 pb-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <Link to="/" className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-8">
+          {/* <Link to="/" className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
-          </Link>
+          </Link> */}
 
           <div className="grid lg:grid-cols-5 gap-8">
             {/* Video Player Area */}
