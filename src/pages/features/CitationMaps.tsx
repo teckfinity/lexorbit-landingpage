@@ -24,18 +24,19 @@ export default function CitationMaps() {
   const [selectedNode, setSelectedNode] = useState<CaseNode | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
-const centralNode: CaseNode = {
-  id: 1, x: 50, y: 50, label: "Brown v. Board of Education", size: 60, type: "landmark",
-  year: "1954", description: "Landmark Supreme Court case that declared racial segregation in public schools unconstitutional.", citations: 25847
-};
+  const centralNode: CaseNode = {
+    id: 1, x: 50, y: 50, label: "Brown v. Board of Education", size: 60, type: "landmark",
+    year: "1954", description: "Landmark Supreme Court case that declared racial segregation in public schools unconstitutional.", citations: 25847
+  };
 
-const connectedNodes: CaseNode[] = [
-  { id: 2, x: 15, y: 30, label: "Plessy v. Ferguson", size: 40, type: "cited", year: "1896", description: "Established 'separate but equal' doctrine, later overturned by Brown.", citations: 8234 },
-  { id: 4, x: 20, y: 70, label: "McLaurin v. Oklahoma", size: 35, type: "cited", year: "1950", description: "Ruled against segregation within graduate education.", citations: 2156 },
-  { id: 3, x: 65, y: 25, label: "Bolling v. Sharpe", size: 35, type: "citing", year: "1954", description: "Extended Brown's desegregation ruling to federal territories.", citations: 3421 },
-  { id: 5, x: 85, y: 45, label: "Green v. County School Board", size: 38, type: "citing", year: "1968", description: "Required school districts to take affirmative steps to desegregate.", citations: 4532 },
-  { id: 6, x: 85, y: 75, label: "Swann v. Charlotte-Mecklenburg", size: 35, type: "citing", year: "1971", description: "Upheld busing as a means to achieve school desegregation.", citations: 3876 },
-];
+  const connectedNodes: CaseNode[] = [
+    { id: 2, x: 15, y: 30, label: "Plessy v. Ferguson", size: 40, type: "cited", year: "1896", description: "Established 'separate but equal' doctrine, later overturned by Brown.", citations: 8234 },
+    { id: 4, x: 20, y: 70, label: "McLaurin v. Oklahoma", size: 35, type: "cited", year: "1950", description: "Ruled against segregation within graduate education.", citations: 2156 },
+    { id: 3, x: 65, y: 25, label: "Bolling v. Sharpe", size: 35, type: "citing", year: "1954", description: "Extended Brown's desegregation ruling to federal territories.", citations: 3421 },
+    { id: 5, x: 85, y: 45, label: "Green v. County School Board", size: 38, type: "citing", year: "1968", description: "Required school districts to take affirmative steps to desegregate.", citations: 4532 },
+    { id: 6, x: 85, y: 75, label: "Swann v. Charlotte-Mecklenburg", size: 35, type: "citing", year: "1971", description: "Upheld busing as a means to achieve school desegregation.", citations: 3876 },
+  ];
+
   const allNodes = [centralNode, ...connectedNodes];
 
   const handleNodeClick = (node: CaseNode) => {
@@ -62,17 +63,17 @@ const connectedNodes: CaseNode[] = [
       <Navigation showBanner={true} />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F1419 0%, #1A2332 100%)' }}>
+      <section className="pt-40 pb-28 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F1419 0%, #1A2332 100%)' }}>
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 165, 116, 0.03) 2px, rgba(212, 165, 116, 0.03) 4px)' }} />
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <Link 
+          {/* <Link 
             to="/#features" 
             className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Features</span>
-          </Link>
+          </Link> */}
           
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="w-28 h-28 rounded-3xl mx-auto mb-8 flex items-center justify-center border-2 border-gold/30 shadow-lg" style={{ background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(232, 204, 180, 0.1))', boxShadow: '0 12px 40px rgba(212, 165, 116, 0.2)' }}>

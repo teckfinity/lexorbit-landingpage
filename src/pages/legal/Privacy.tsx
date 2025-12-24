@@ -124,7 +124,7 @@ export default function Privacy() {
       <Navigation showBanner={true} />
       
       {/* Hero */}
-      <section className="pt-32 pb-16 px-4">
+      <section className="pt-40 pb-28 px-4">
         <div className="max-w-4xl mx-auto">
           {/* <Link 
             to="/" 

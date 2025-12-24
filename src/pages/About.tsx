@@ -92,7 +92,7 @@ export default function About() {
       <Navigation showBanner={true} />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4">
+         <section className="pt-40 pb-28 px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* <Link 
             to="/" 
