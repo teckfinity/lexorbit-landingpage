@@ -26,17 +26,17 @@ export default function LegalResearch() {
       <Navigation showBanner={true} />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F1419 0%, #1A2332 100%)' }}>
+      <section className="pt-40 pb-28 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F1419 0%, #1A2332 100%)' }}>
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 165, 116, 0.03) 2px, rgba(212, 165, 116, 0.03) 4px)' }} />
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <Link 
+          {/* <Link 
             to="/#features" 
             className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Features</span>
-          </Link>
+          </Link> */}
           
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="w-28 h-28 rounded-3xl mx-auto mb-8 flex items-center justify-center border-2 border-gold/30 shadow-lg" style={{ background: 'linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(232, 204, 180, 0.1))', boxShadow: '0 12px 40px rgba(212, 165, 116, 0.2)' }}>
